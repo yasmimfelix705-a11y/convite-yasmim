@@ -209,19 +209,22 @@ body {
 
 
 
-
-
-
 /* 🎁 LISTA DE PRESENTES */
-
 
 .circulo-presentes {
 
+    top: 82%;
 
-    top: 86%;
+    left: 8%;
+
+    width: 55px;
+
+    height: 55px;
+
+}
 
 
-    left: 12%;
+
 
 
 }
