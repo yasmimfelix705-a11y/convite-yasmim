@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Convite | Yasmim 15 Anos</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ==========================
+         ENVELOPE
+    ========================== -->
+
+    <div id="tela-envelope" class="tela-envelope">
+
+        <img
+            src="imagens/file_000000002c34720eb653895a2e8ebbc9.png"
+            alt="Envelope"
+            class="envelope"
+            onclick="abrirConvite()">
+
+    </div>
+
+    <!-- ==========================
+         CONVITE
+    ========================== -->
+
+    <div id="tela-convite" class="tela-convite">
+
+        <div class="convite-container">
+
+            <img
+                src="imagens/file_000000007758820ea45098fb609d7a44.png"
+                alt="Convite"
+                class="convite">
+
+            <!-- 🎁 Lista de Presentes -->
+            <button
+                class="circulo-presentes"
+                onclick="listaPresentes()"
+                aria-label="Lista de presentes">
+            </button>
+
+            <!-- 📍 Local -->
+            <button
+                class="circulo-local"
+                onclick="verLocal()"
+                aria-label="Local da festa">
+            </button>
+
+            <!-- 💌 Confirmação de Presença -->
+            <button
+                class="circulo-confirmar"
+                onclick="confirmarPresenca()"
+                aria-label="Confirmação de presença">
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
