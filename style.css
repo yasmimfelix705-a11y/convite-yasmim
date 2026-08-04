@@ -1,0 +1,451 @@
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+
+    width:100%;
+    height:100%;
+
+    overflow:hidden;
+
+    background:#000;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+/* ==========================================
+   ENVELOPE
+========================================== */
+
+.tela-envelope{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:1000;
+
+    background:#000;
+
+}
+
+.envelope{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+.abrindo{
+
+    animation:abrirEnvelope 1.5s forwards;
+
+}
+
+@keyframes abrirEnvelope{
+
+    0%{
+
+        opacity:1;
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.04);
+        filter:brightness(1.4);
+
+    }
+
+    100%{
+
+        opacity:0;
+        transform:scale(1.10);
+        filter:brightness(2);
+
+    }
+
+}
+
+/* ==========================================
+   CONVITE
+========================================== */
+
+.tela-convite{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    background:#000;
+
+    transition:.8s;
+
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.convite-container{
+
+    position:relative;
+
+    width:min(100vw, calc(100vh * 1022 / 1536));
+
+    aspect-ratio:1022 / 1536;
+
+}
+
+.convite{
+
+    width:100%;
+
+    display:block;
+
+}
+
+/* ==========================================
+   BOTÕES TRANSPARENTES
+========================================== */
+
+.circulo-presentes,
+.circulo-local,
+.circulo-confirmar{
+
+    position:absolute;
+
+    width:92px;
+
+    height:92px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:transparent;
+
+    cursor:pointer;
+
+    z-index:999;
+
+}
+
+/* 🎁 PRESENTES */
+
+.circulo-presentes{
+
+    left:198px;
+
+    top:1105px;
+
+}
+
+/* 📍 LOCAL */
+
+.circulo-local{
+
+    left:466px;
+
+    top:1105px;
+
+}
+
+/* 💌 CONFIRMAÇÃO */
+
+.circulo-confirmar{
+
+    left:735px;
+
+    top:1105px;
+
+}
+/* ==========================================
+   PÁGINA LISTA DE PRESENTES
+========================================== */
+
+.pagina-presentes{
+
+    min-height:100vh;
+
+    background:linear-gradient(
+        180deg,
+        #edf7ff 0%,
+        #d9ebff 45%,
+        #c7dfff 100%
+    );
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px 20px;
+
+    overflow-y:auto;
+
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.lista{
+
+    width:100%;
+
+    max-width:700px;
+
+    background:rgba(255,255,255,.88);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:30px;
+
+    padding:40px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+.lista h1{
+
+    text-align:center;
+
+    color:#4d6f9c;
+
+    margin-bottom:20px;
+
+    font-size:2.1rem;
+
+}
+
+.frase{
+
+    text-align:center;
+
+    color:#5f7085;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+}
+
+.categoria{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    margin-bottom:18px;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.06);
+
+}
+
+.categoria h2{
+
+    color:#6c89b6;
+
+    margin-bottom:12px;
+
+}
+
+.categoria p{
+
+    color:#5f6775;
+
+    line-height:1.9;
+
+}
+
+.mensagem-final{
+
+    margin-top:25px;
+
+    background:#f7fbff;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    color:#5b6978;
+
+    line-height:1.9;
+
+    text-align:center;
+
+}
+
+.pix{
+
+    margin-top:25px;
+
+    background:#ffffff;
+
+    padding:22px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.06);
+
+}
+
+.pix h2{
+
+    color:#6f8fbb;
+
+    margin-bottom:12px;
+
+}
+
+.pix p{
+
+    margin:8px 0;
+
+    color:#536171;
+
+    font-weight:bold;
+
+}
+
+.pix small{
+
+    display:block;
+
+    margin-top:12px;
+
+    color:#6c7888;
+
+    line-height:1.7;
+
+}
+
+/* ==========================================
+   BOTÃO VOLTAR
+========================================== */
+
+.voltar{
+
+    margin-top:30px;
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#6f95c9;
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.voltar:hover{
+
+    background:#5d84bb;
+
+    transform:translateY(-2px);
+
+}
+
+/* ==========================================
+   RESPONSIVIDADE
+========================================== */
+
+@media (max-width:768px){
+
+    .lista{
+
+        padding:28px;
+
+    }
+
+    .lista h1{
+
+        font-size:1.8rem;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .lista{
+
+        padding:22px;
+
+        border-radius:22px;
+
+    }
+
+    .lista h1{
+
+        font-size:1.5rem;
+
+    }
+
+    .categoria{
+
+        padding:16px;
+
+    }
+
+    .voltar{
+
+        padding:14px;
+
+        font-size:15px;
+
+    }
+
+}
