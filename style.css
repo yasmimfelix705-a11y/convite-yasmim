@@ -1,0 +1,62 @@
+/* ==========================================
+   BOTÕES TRANSPARENTES
+   POSICIONADOS SOBRE OS ÍCONES DO CONVITE
+========================================== */
+
+.circulo-presentes,
+.circulo-local,
+.circulo-confirmar{
+
+    position:absolute;
+
+    width:9%;
+
+    aspect-ratio:1 / 1;
+
+    padding:0;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:transparent;
+
+    cursor:pointer;
+
+    z-index:999;
+
+    -webkit-tap-highlight-color:transparent;
+
+    outline:none;
+
+}
+
+/* 🎁 PRESENTES */
+
+.circulo-presentes{
+
+    left:19.4%;
+
+    top:71.9%;
+
+}
+
+/* 📍 LOCAL */
+
+.circulo-local{
+
+    left:45.6%;
+
+    top:71.9%;
+
+}
+
+/* 💌 CONFIRMAÇÃO */
+
+.circulo-confirmar{
+
+    left:71.9%;
+
+    top:71.9%;
+
+}
