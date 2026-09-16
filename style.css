@@ -60,3 +60,61 @@
     top:71.9%;
 
 }
+/* ========================================== PÁGINA — LISTA DE PRESENTES ========================================== */
+
+.pagina-presentes{
+
+width:100%; min-height:100vh; height:auto; overflow-x:hidden; overflow-y:auto; background:#eaf6ff; 
+
+}
+
+.pagina-presentes .lista{
+
+width:100%; max-width:700px; min-height:100vh; margin:0 auto; padding:40px 22px 50px; box-sizing:border-box; 
+
+}
+
+.pagina-presentes .lista h1{
+
+margin:0 0 25px; 
+
+}
+
+.pagina-presentes .frase{
+
+margin-bottom:25px; 
+
+}
+
+.pagina-presentes .categoria{
+
+width:100%; margin-bottom:18px; 
+
+}
+
+.pagina-presentes .mensagem-final{
+
+width:100%; margin-top:25px; 
+
+}
+
+.pagina-presentes .pix{
+
+width:100%; margin-top:25px; margin-bottom:30px; 
+
+}
+
+.pagina-presentes .voltar{
+
+display:block; margin:0 auto; width:auto; min-width:180px; 
+
+}
+
+/* ========================================== GARANTE QUE A LISTA POSSA SER ROLADA ========================================== */
+
+html:has(.pagina-presentes), body.pagina-presentes{
+
+height:auto; min-height:100%; overflow-y:auto; overflow-x:hidden; 
+
+}
+
